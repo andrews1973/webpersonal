@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="Contacta con Andrés, estudiante de Desarrollo Full Stack." />
+
+    <title>Andrés | Contacto</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Font Awesome -->
+    <script
+        src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+        rel="stylesheet"
+        type="text/css" />
+
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+
+    <!-- Navegación -->
+    <nav id="navbar" aria-label="Navegación principal">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house" aria-hidden="true"></i>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="biografia.html">
+                    <i class="fa-solid fa-user" aria-hidden="true"></i>
+                    Biografía
+                </a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">
+                    <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                    Portfolio
+                </a>
+            </li>
+
+            <li>
+                <a href="contacto.html" aria-current="page">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Cabecera -->
+    <header class="cabecera-pagina">
+        <p class="cabecera-etiqueta">Hablemos</p>
+
+        <h1>Contacta conmigo</h1>
+
+        <p>
+            ¿Tienes una idea, una propuesta o simplemente quieres
+            ponerte en contacto conmigo? Estaré encantado de leerte.
+        </p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenido contacto">
+
+        <div class="contacto-cuadricula">
+
+            <!-- Información de contacto -->
+            <section class="contacto-informacion"
+                     aria-labelledby="titulo-informacion">
+
+                <h2 id="titulo-informacion">Información de contacto</h2>
+
+                <p>
+                    Estoy formándome en desarrollo Full Stack y me interesa
+                    seguir aprendiendo, crear proyectos y conocer nuevas
+                    oportunidades relacionadas con el desarrollo web.
+                </p>
+
+                <div class="contacto-dato">
+                    <i class="fa-solid fa-location-dot"
+                       aria-hidden="true"></i>
+
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Vitoria-Gasteiz, Álava</p>
+                    </div>
+                </div>
+
+                <div class="contacto-dato">
+                    <i class="fa-solid fa-code"
+                       aria-hidden="true"></i>
+
+                    <div>
+                        <h3>Mi GitHub</h3>
+                        <p>
+                            Puedes consultar mis proyectos y mi código.
+                        </p>
+
+                        <a href="https://github.com/andrews1973"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Visitar mi perfil
+                            <i class="fa-solid fa-arrow-up-right-from-square"
+                               aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contacto-dato">
+                    <i class="fa-solid fa-laptop-code"
+                       aria-hidden="true"></i>
+
+                    <div>
+                        <h3>Desarrollo web</h3>
+                        <p>
+                            Frontend, backend y nuevos proyectos
+                            tecnológicos.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Formulario -->
+            <section class="contacto-formulario"
+                     aria-labelledby="titulo-formulario">
+
+                <h2 id="titulo-formulario">Envíame un mensaje</h2>
+
+                <p class="formulario-descripcion">
+                    Completa los siguientes campos para preparar tu mensaje.
+                </p>
+
+                <!-- Pendiente de conectar a un servicio de envío -->
+                <form id="formulario-contacto">
+
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre</label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            autocomplete="name"
+                            required />
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nombre@ejemplo.com"
+                            autocomplete="email"
+                            required />
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="asunto">Asunto</label>
+
+                        <input
+                            type="text"
+                            id="asunto"
+                            name="asunto"
+                            placeholder="¿Sobre qué quieres hablar?"
+                            required />
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensaje">Mensaje</label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            placeholder="Escribe aquí tu mensaje..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-contacto">
+                        <i class="fa-solid fa-paper-plane"
+                           aria-hidden="true"></i>
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+
+        <div class="footer-columna">
+
+            <h2>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                Ubicación
+            </h2>
+
+            <p>Vitoria-Gasteiz, Álava</p>
+
+        </div>
+
+        <div class="footer-columna">
+
+            <h2>Redes sociales</h2>
+
+            <div class="redes-sociales">
+
+                <a href="https://github.com/andrews1973"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"
+                       aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-columna">
+
+            <h2>
+                <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                Mi web
+            </h2>
+
+            <p>
+                Un espacio personal para mostrar mi formación,
+                mis conocimientos y mis proyectos.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <small>Copyright &copy; Andrés 2026</small>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
