@@ -80,8 +80,8 @@ h6 {
     --color-blanco: #ffffff;
     --color-hover: rgb(5, 140, 25);
 
-    --altura-menu: 80px;
-    --ancho-contenido: 1400px;
+    --altura-menu: 5rem;       /* 80px */
+    --ancho-contenido: 87.5rem; /* 1400px */
 }
 
 
@@ -97,7 +97,7 @@ h6 {
 
     width: 100%;
     min-height: var(--altura-menu);
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem; /* 12px 20px */
 
     display: flex;
     justify-content: center;
@@ -111,7 +111,7 @@ h6 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 0.75rem; /* 12px */
 
     list-style: none;
     padding: 0;
@@ -119,13 +119,13 @@ h6 {
 
 #navbar a {
     display: block;
-    padding: 10px 16px;
+    padding: 0.625rem 1rem; /* 10px 16px */
 
     color: var(--color-blanco);
     background-color: var(--color-oscuro);
 
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px */
 
     transition: background-color 0.3s ease;
 }
@@ -136,8 +136,8 @@ h6 {
 }
 
 #navbar a:focus-visible {
-    outline: 2px solid var(--color-blanco);
-    outline-offset: 3px;
+    outline: 0.125rem solid var(--color-blanco); /* 2px */
+    outline-offset: 0.250rem; /* 4px */
 }
 
 
@@ -160,9 +160,9 @@ header.hero {
 
     /* Ocupamos toda la altura de la ventana */
     min-height: 100vh;
-    padding: 120px 24px 40px;
+    padding: 7.5rem 1.5rem 2.5rem; /* 120px 24px 40px */
 
-    /* Centramos el contenido, texto etc */
+    /* Centramos el contenido, texto, etc. */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,34 +174,34 @@ header.hero {
 /* Contenedor del texto de la portada */
 
 .hero-contenido {
-    max-width: 900px;
+    max-width: 56.25rem; /* 900px */
 }
 
 /* Título principal */
 
 .hero-contenido h1 {
     font-size: 3rem;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 /* Texto descriptivo */
 
 .hero-contenido p {
     font-size: 1rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px */
 }
 
 /* Botón del portfolio */
 
 .hero-boton {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem; /* 12px 24px */
 
     color: var(--color-blanco);
     background-color: var(--color-principal);
 
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px */
 
     transition: background-color 0.3s ease;
 }
