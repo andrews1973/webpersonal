@@ -1,8 +1,9 @@
-/* reseteamos un poco con A Modern CSS Reset de Josh W. Comeau*/
+/* =====================================================
+   WEB PERSONAL - CSS MOBILE FIRST
+===================================================== */
 
 /* =========================
-   1. RESET CSS
-   A Modern CSS Reset de Josh W. Comeau
+  RESET CSS
 ========================= */
 
 *,
@@ -24,7 +25,6 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
 }
@@ -68,9 +68,8 @@ h6 {
     text-wrap: balance;
 }
 
-
 /* =========================
-   2. VARIABLES CSS
+   VARIABLES CSS
 ========================= */
 
 :root {
@@ -80,13 +79,13 @@ h6 {
     --color-blanco: #ffffff;
     --color-hover: rgb(5, 140, 25);
 
-    --altura-menu: 5rem;       /* 80px */
-    --ancho-contenido: 87.5rem; /* 1400px */
+    --altura-menu: 6.875rem;
+    --ancho-contenido: 87.5rem;
 }
 
-
 /* =========================
-   3. NAVEGACIÓN
+   NAVEGACIÓN
+   Estilos base para móvil
 ========================= */
 
 #navbar {
@@ -94,15 +93,12 @@ h6 {
     top: 0;
     left: 0;
     z-index: 1000;
-
     width: 100%;
     min-height: var(--altura-menu);
-    padding: 0.75rem 1.25rem; /* 12px 20px */
-
+    padding: 0.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: var(--color-principal);
 }
 
@@ -111,22 +107,19 @@ h6 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.75rem; /* 12px */
-
+    gap: 0.5rem;
     list-style: none;
     padding: 0;
 }
 
 #navbar a {
     display: block;
-    padding: 0.625rem 1rem; /* 10px 16px */
-
+    padding: 0.5625rem 0.75rem;
     color: var(--color-blanco);
     background-color: var(--color-oscuro);
-
     text-decoration: none;
-    border-radius: 0.5rem; /* 8px */
-
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
     transition: background-color 0.3s ease;
 }
 
@@ -136,73 +129,52 @@ h6 {
 }
 
 #navbar a:focus-visible {
-    outline: 0.125rem solid var(--color-blanco); /* 2px */
-    outline-offset: 0.250rem; /* 4px */
+    outline: 0.125rem solid var(--color-blanco);
+    outline-offset: 0.1875rem;
 }
 
-
 /* =========================
-   4. CABECERA A PANTALLA COMPLETA
+   CABECERA PRINCIPAL
 ========================= */
 
 header.hero {
-    /* Imagen de fondo y capa oscura */
     background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-        ),
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
         url("../assets/img/portada.jpg");
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    /* Ocupamos toda la altura de la ventana */
     min-height: 100vh;
-    padding: 7.5rem 1.5rem 2.5rem; /* 120px 24px 40px */
-
-    /* Centramos el contenido, texto, etc. */
+    padding: 8.75rem 1rem 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     color: var(--color-blanco);
 }
 
-/* Contenedor del texto de la portada */
-
 .hero-contenido {
-    max-width: 56.25rem; /* 900px */
+    max-width: 56.25rem;
 }
-
-/* Título principal */
 
 .hero-contenido h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-/* Texto descriptivo */
-
 .hero-contenido p {
     font-size: 1rem;
-    margin-bottom: 1.875rem; /* 30px */
+    margin-bottom: 1.875rem;
 }
-
-/* Botón del portfolio */
 
 .hero-boton {
     display: inline-block;
-    padding: 0.75rem 1.5rem; /* 12px 24px */
-
+    padding: 0.75rem 1.5rem;
     color: var(--color-blanco);
     background-color: var(--color-principal);
-
     text-decoration: none;
-    border-radius: 0.5rem; /* 8px */
-
+    border-radius: 0.5rem;
     transition: background-color 0.3s ease;
 }
 
@@ -210,3 +182,656 @@ header.hero {
 .hero-boton:focus-visible {
     background-color: var(--color-hover);
 }
+
+.hero-boton:focus-visible {
+    outline: 0.125rem solid var(--color-blanco);
+    outline-offset: 0.1875rem;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.contenido {
+    width: 100%;
+    max-width: var(--ancho-contenido);
+    margin-inline: auto;
+    padding: 1.5rem 1rem;
+    flex: 1;
+}
+
+.page-section {
+    padding-block: 1.25rem;
+}
+
+.page-section p {
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    color: var(--color-blanco);
+    background-color: var(--color-oscuro);
+    text-align: center;
+}
+
+footer>div {
+    flex: auto;
+    width: 100%;
+    max-width: 21.875rem;
+}
+
+footer h4 {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 0.75rem;
+}
+
+footer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin: 0.25rem;
+    color: var(--color-blanco);
+    background-color: #424242;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: var(--color-hover);
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
+    padding: 1.25rem;
+    color: var(--color-blanco);
+    background-color: #111111;
+    text-align: center;
+}
+
+/* =========================
+   CABECERA DE PÁGINAS
+========================= */
+
+.cabecera-pagina {
+    padding: 9.375rem 1rem 1.875rem;
+    text-align: center;
+    background-color: var(--color-claro);
+}
+
+.cabecera-pagina .cabecera-etiqueta {
+    margin-bottom: 0.625rem;
+    color: var(--color-principal);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+}
+
+.cabecera-pagina h1 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.cabecera-pagina>p:last-child {
+    max-width: 40.625rem;
+    margin-inline: auto;
+}
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio {
+    padding: 1.5rem 1rem 2.5rem;
+}
+
+.portfolio .page-section h2 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.portfolio-introduccion {
+    margin-bottom: 1.875rem;
+}
+
+.portfolio-cuadricula {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* =========================
+   TARJETAS DE PROYECTOS
+========================= */
+
+.tarjeta-proyecto {
+    min-width: 0;
+    overflow: hidden;
+    background-color: var(--color-blanco);
+    border: 0.0625rem solid #e5e5e5;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 8%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.625rem 1.5rem rgb(0 0 0 / 12%);
+}
+
+.tarjeta-proyecto>img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+    background-color: var(--color-claro);
+}
+
+.tarjeta-contenido {
+    padding: 1.125rem;
+}
+
+.tarjeta-contenido h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.tarjeta-contenido>p {
+    margin-bottom: 1.25rem;
+    color: #555555;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.tecnologias li {
+    padding: 0.3125rem 0.625rem;
+    color: var(--color-oscuro);
+    background-color: var(--color-claro);
+    border-radius: 0.3125rem;
+    font-size: 0.8rem;
+}
+
+/* =========================
+   PÁGINA DE CONTACTO
+========================= */
+
+.contacto {
+    max-width: 68.75rem;
+    padding: 1.5rem 1rem 2.5rem;
+}
+
+.contacto-cuadricula {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    align-items: start;
+}
+
+.contacto-informacion {
+    padding: 1.375rem;
+    color: var(--color-blanco);
+    background-color: var(--color-oscuro);
+    border-radius: 0.75rem;
+}
+
+.contacto-informacion h2,
+.contacto-formulario h2 {
+    margin-bottom: 1.125rem;
+    font-size: 1.4rem;
+}
+
+.contacto-informacion>p {
+    margin-bottom: 2rem;
+    color: #dddddd;
+}
+
+.contacto-dato {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.contacto-dato:last-child {
+    margin-bottom: 0;
+}
+
+.contacto-dato>i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+    border-radius: 0.5rem;
+}
+
+.contacto-dato h3 {
+    margin-bottom: 0.375rem;
+    font-size: 1rem;
+}
+
+.contacto-dato p {
+    color: #dddddd;
+}
+
+.contacto-dato a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--color-blanco);
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+.contacto-dato a:hover {
+    color: #f0b48d;
+}
+
+.contacto-formulario {
+    padding: 1.375rem;
+    background-color: var(--color-blanco);
+    border: 0.0625rem solid #e5e5e5;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 6%);
+}
+
+.formulario-descripcion {
+    margin-bottom: 1.5rem;
+    color: #555555;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.campo-formulario label {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 0.75rem 0.875rem;
+    color: var(--color-oscuro);
+    background-color: #ffffff;
+    border: 0.0625rem solid #cccccc;
+    border-radius: 0.375rem;
+    outline: none;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    min-height: 9.375rem;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 0.1875rem rgb(210 105 30 / 15%);
+}
+
+.campo-formulario input::placeholder,
+.campo-formulario textarea::placeholder {
+    color: #777777;
+}
+
+.boton-contacto {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.8125rem 1.375rem;
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-contacto:hover,
+.boton-contacto:focus-visible {
+    background-color: var(--color-hover);
+}
+
+.boton-contacto:focus-visible {
+    outline: 0.125rem solid var(--color-oscuro);
+    outline-offset: 0.1875rem;
+}
+
+/* =========================
+   PÁGINA DE BIOGRAFÍA
+========================= */
+
+.biografia {
+    max-width: 68.75rem;
+    padding: 1.875rem 1rem 2.5rem;
+}
+
+.biografia-presentacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1.5625rem;
+}
+
+.biografia-imagen {
+    overflow: hidden;
+    border-radius: 0.75rem;
+}
+
+.biografia-imagen img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.75rem;
+}
+
+.biografia-texto {
+    min-width: 0;
+}
+
+.biografia-etiqueta {
+    margin-bottom: 0.625rem;
+    color: var(--color-principal);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+}
+
+.biografia-texto h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+}
+
+.biografia-texto>p:not(.biografia-etiqueta) {
+    margin-bottom: 1rem;
+    color: #444444;
+}
+
+.biografia-boton {
+    display: inline-block;
+    margin-top: 0.625rem;
+    padding: 0.75rem 1.25rem;
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.biografia-boton i {
+    margin-right: 0.5rem;
+}
+
+.biografia-boton:hover,
+.biografia-boton:focus-visible {
+    background-color: var(--color-hover);
+}
+
+.biografia-boton:focus-visible {
+    outline: 0.125rem solid var(--color-oscuro);
+    outline-offset: 0.1875rem;
+}
+
+/* =========================
+   TECNOLOGÍAS Y CONOCIMIENTOS
+========================= */
+
+.biografia-tecnologias {
+    margin-top: 2.8125rem;
+}
+
+.biografia-tecnologias>h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.6rem;
+}
+
+.biografia-tecnologias>p {
+    margin-bottom: 1.875rem;
+    color: #555555;
+}
+
+.tecnologias-cuadricula {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.tecnologia-item {
+    padding: 1.375rem;
+    background-color: var(--color-claro);
+    border: 0.0625rem solid #e5e5e5;
+    border-radius: 0.625rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tecnologia-item:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.375rem 1rem rgb(0 0 0 / 8%);
+}
+
+.tecnologia-item>i {
+    margin-bottom: 1rem;
+    color: var(--color-principal);
+    font-size: 2rem;
+}
+
+.tecnologia-item h3 {
+    margin-bottom: 0.625rem;
+    font-size: 1.1rem;
+}
+
+.tecnologia-item p {
+    color: #555555;
+}
+
+/* =========================
+   TABLET
+   A partir de 768px 
+========================= */
+
+@media (min-width: 768px) {
+    :root {
+        --altura-menu: 5rem;
+    }
+
+    #navbar {
+        padding: 0.75rem 1.25rem;
+    }
+
+    #navbar ul {
+        gap: 0.75rem;
+    }
+
+    #navbar a {
+        padding: 0.625rem 1rem;
+        font-size: 1rem;
+    }
+
+    header.hero {
+        padding: 7.5rem 1.5rem 2.5rem;
+    }
+
+    .hero-contenido h1 {
+        font-size: 4rem;
+    }
+
+    .hero-contenido p {
+        font-size: 1.25rem;
+    }
+
+    .contenido {
+        padding: 2.5rem 1.5rem;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.5rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    footer>div {
+        flex: 1 1 13.75rem;
+        width: auto;
+    }
+
+    .cabecera-pagina {
+        padding: 7.5rem 1.5rem 2.8125rem;
+    }
+
+    .cabecera-pagina h1 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio {
+        padding: 1.875rem 1.5rem 3.75rem;
+    }
+
+    .portfolio-cuadricula {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tarjeta-contenido {
+        padding: 1.375rem;
+    }
+
+    .contacto {
+        padding: 3.125rem 1.5rem 3.75rem;
+    }
+
+    .contacto-cuadricula {
+        gap: 1.75rem;
+    }
+
+    .contacto-informacion,
+    .contacto-formulario {
+        padding: 1.625rem;
+    }
+
+    .boton-contacto {
+        width: auto;
+    }
+
+    .biografia {
+        padding: 1.875rem 1.5rem 2.5rem;
+    }
+
+    .tecnologias-cuadricula {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tecnologia-item {
+        padding: 1.5625rem 1.25rem;
+    }
+}
+
+/* =========================
+   ESCRITORIO
+   A partir de 992px 
+========================= */
+
+@media (min-width: 992px) {
+    .hero-contenido h1 {
+        font-size: 5rem;
+    }
+
+    .hero-contenido p {
+        font-size: 1.5rem;
+    }
+
+    .cabecera-pagina {
+        padding: 7.5rem 1.5rem 2.8125rem;
+    }
+
+    .cabecera-pagina h1 {
+        font-size: 3rem;
+    }
+
+    .portfolio-cuadricula {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .contacto-cuadricula {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem;
+    }
+
+    .contacto-informacion,
+    .contacto-formulario {
+        padding: 2rem;
+    }
+
+    .contacto-informacion h2,
+    .contacto-formulario h2 {
+        font-size: 1.6rem;
+    }
+
+    .biografia-presentacion {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem;
+    }
+
+    .biografia-imagen img {
+        object-position: 70% center;
+    }
+
+    .biografia-texto h2 {
+        font-size: 2rem;
+    }
+
+    .biografia-tecnologias {
+        margin-top: 4.375rem;
+    }
+
+    .biografia-tecnologias>h2 {
+        font-size: 2rem;
+    }
+
+    .tecnologias-cuadricula {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   ESCRITORIO
+   No necesito de momento mas mediaquerys
+========================= *
