@@ -727,7 +727,7 @@ footer a:hover {
     }
 
     .portfolio-cuadricula {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2 1fr);
     }
 
     .tarjeta-contenido {
@@ -756,7 +756,7 @@ footer a:hover {
     }
 
     .tecnologias-cuadricula {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .tecnologia-item {
@@ -787,11 +787,11 @@ footer a:hover {
     }
 
     .portfolio-cuadricula {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .contacto-cuadricula {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
     }
 
@@ -806,7 +806,7 @@ footer a:hover {
     }
 
     .biografia-presentacion {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
     }
 
@@ -827,7 +827,7 @@ footer a:hover {
     }
 
     .tecnologias-cuadricula {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
