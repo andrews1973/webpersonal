@@ -186,7 +186,7 @@ header.hero {
    CONTENIDO PRINCIPAL
 ========================= */
 
-.contenido {
+main.contenido {
     width: 100%;
     max-width: var(--ancho-contenido);
     margin-inline: auto;
@@ -831,6 +831,6 @@ footer a:hover {
 }
 
 /* =========================
-   ESCRITORIO
-   No necesito de momento mas mediaquerys
+   ESCRITORIO a 1200px o otras superiores
+   No las necesito de momento, Sin calzador...
 ========================= *
