@@ -515,7 +515,7 @@ footer a:hover {
 
 .campo-formulario textarea {
     resize: vertical;
-    min-height: 9.375rem;
+    min-height: 12rem;
 }
 
 .campo-formulario input:focus,
@@ -783,6 +783,10 @@ footer a:hover {
 .sobre-mi-boton:focus-visible {
     outline: 0.125rem solid var(--color-blanco);
     outline-offset: 0.1875rem;
+}
+
+.map {
+  margin-bottom: 2rem;
 }
 
 
