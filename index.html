@@ -23,7 +23,7 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
+<body id="page-top" class="pagina-inicio">
 
     <!-- Navegación principal -->
     <nav id="navbar">
@@ -83,23 +83,45 @@
     <!-- Contenido principal -->
     <main class="contenido">
 
-        <section class="page-section" aria-labelledby="sobre-mi">
+        <section class="page-section sobre-mi">
 
-            <h2 id="sobre-mi">
-                <i class="fa-solid fa-code"></i>
-                Sobre mí
-            </h2>
+            <!-- Vídeo de fondo -->
+            <video class="sobre-mi-video" autoplay muted loop playsinline aria-hidden="true">
+                <source src="assets/video/video5.mp4" type="video/mp4">
+            </video>
 
-            <p>
-                ¡Bienvenido a mi web personal! Soy Andrés, estudiante del Bootcamp de <strong>Desarrollo Full
-                    Stack</strong> de The Bridge. Me apasiona la programación y el desarrollo web, y disfruto
-                aprendiendo nuevas tecnologías y creando proyectos que transforman ideas en soluciones digitales
-            </p>
+            <!-- Contenido de la sección -->
+            <div class="sobre-mi-contenido">
 
-            <p>
-                En esta web podrás conocer mi trayectoria, descubrir
-                mis proyectos y ponerte en contacto conmigo.
-            </p>
+                <p class="sobre-mi-etiqueta">CONOCE MI HISTORIA</p>
+
+                <h2 id="sobre-mi">
+                    <i class="fa-solid fa-code"></i>
+                    Sobre mí
+                </h2>
+
+                <p class="sobre-mi-intro">
+                    ¡Hola! Soy Andrés, estudiante del Bootcamp de
+                    <strong>Desarrollo Full Stack</strong> de The Bridge.
+                </p>
+
+                <p>
+                    Me apasiona la programación y el desarrollo web. Disfruto
+                    aprendiendo nuevas tecnologías y creando proyectos que
+                    transforman ideas en soluciones digitales.
+                </p>
+
+                <p>
+                    En esta web podrás conocer mi trayectoria, descubrir mis
+                    proyectos y ponerte en contacto conmigo.
+                </p>
+
+                <a href="pages/biografia.html" class="sobre-mi-boton">
+                    Conoce mi trayectoria
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
 
         </section>
 
