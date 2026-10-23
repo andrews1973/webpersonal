@@ -10,15 +10,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-body {
-    font-family: "Montserrat", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 img,
@@ -80,6 +73,15 @@ h6 {
    Estilos base para móvil
 ========================= */
 
+body {
+    font-family: "Montserrat", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 #navbar {
     position: fixed;
     top: 0;
@@ -120,7 +122,7 @@ h6 {
     background-color: var(--color-hover);
 }
 
-#navbar a:focus-visible {
+#navbar a:focus-visible { /* Accesibilidad*/
     outline: 0.125rem solid var(--color-blanco);
     outline-offset: 0.1875rem;
 }
