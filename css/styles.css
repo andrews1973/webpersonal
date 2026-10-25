@@ -312,12 +312,6 @@ footer a:hover {
     display: none;
 }
 
-/* El contenido se sitúa por encima del fondo */
-.cabecera-contenido {
-    position: relative;
-    z-index: 1;
-}
-
 /* =========================
    PORTFOLIO
 ========================= */
