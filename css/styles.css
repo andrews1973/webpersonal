@@ -284,7 +284,7 @@ footer a:hover {
     text-align: center;
     background-color: var(--color-claro);
     position: relative;
-    isolation: isolate;
+    isolation: isolate; /* controlo (aislo) el apilamiento de las capas con el video de fondo y que no se pierdan o mezclen con otras capas de la pagina*/
     overflow: hidden;
 }
 
@@ -552,11 +552,6 @@ footer a:hover {
 
 .boton-contacto:hover {
     background-color: var(--color-hover);
-}
-
-
-.blanco {
-    color: var(--color-claro);
 }
 
 /* =========================
@@ -847,6 +842,7 @@ footer a:hover {
         font-size: 2.5rem;
     }
 
+
     /* portfolio */
 
     .portfolio {
@@ -902,7 +898,7 @@ footer a:hover {
         display: block;
         position: absolute;
         inset: 0;
-        z-index: -1;
+        z-index: -1; /*usare isolate para que no pierda esta capa*/
 
         width: 100%;
         height: 100%;
@@ -914,7 +910,7 @@ footer a:hover {
     }
 
     .sobre-mi-video {
-        z-index: -2;
+        z-index: -2; /* recordar usar la propiedad isolate para que se vean todas las capas */
         max-width: none;
     }
 
@@ -930,8 +926,7 @@ footer a:hover {
         padding: 6rem 2rem;
     }
 
-
-    /* Panel translúcido con borrosidad en pagina de inicio*/
+    /* Panel translúcido con borrosidad sobre un video en pagina de inicio*/
     .sobre-mi-contenido {
         padding: 2.5rem;
         border: 0.0625rem solid rgb(255 255 255 / 20%);
@@ -944,9 +939,14 @@ footer a:hover {
         padding: 7.5rem 1.5rem 2.8125rem;
     }
 
+    .pagina-contacto .cabecera-pagina {
+        color: var(--color-blanco);
+    }
+
     .cabecera-pagina h1 {
         font-size: 3rem;
     }
+
 
     .portfolio-cuadricula {
         grid-template-columns: repeat(3, minmax(0, 1fr));
