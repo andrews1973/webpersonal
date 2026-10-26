@@ -768,6 +768,13 @@ footer a:hover {
   margin-bottom: 2rem;
 }
 
+iframe {
+  width: 100%;
+  display: block;
+  border: none;
+  height: 16rem;   
+}
+
 
 /* =========================
    TABLET
